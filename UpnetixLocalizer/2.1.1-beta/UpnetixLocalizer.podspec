@@ -28,7 +28,7 @@ s.author           = { 'denislava.shentova@imperiaonline.org' => 'denislava.shen
 s.source           = { :git => 'https://bitbucket.upnetix.com/scm/il/upnetix-localizer-pod.git', :tag => '2.1.1-beta' }
 
 s.ios.deployment_target = '8.0'
-s.source_files = 'UpnetixLocalizer/Classes/**/*'
+s.source_files = 'UpnetixLocalizer/Classes/Localizer.swift'
 
 s.dependency 'CryptoSwift', '~> 0.7.1'
 end
