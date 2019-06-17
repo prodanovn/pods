@@ -29,7 +29,6 @@ s.source           = { :git => 'https://bitbucket.upnetix.com/scm/il/upnetix-loc
 
 s.ios.deployment_target = '8.0'
 s.source_files = 'UpnetixLocalizer/Classes/**/*'
-s.exclude_files = 'UpnetixLocalizer/Classes/**/*'
 
 s.dependency 'CryptoSwift', '~> 0.7.1'
 end
