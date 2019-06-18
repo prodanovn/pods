@@ -29,6 +29,7 @@ s.ios.vendored_frameworks = 'UpnetixLocalizer.framework'
 s.source           = { :git => 'https://github.com/prodanovn/UpnetixLocalizer.git', :tag => '2.1.1-beta' }
 
 s.ios.deployment_target = '8.0'
+s.source_files = "UpnetixLocalizer"
 
 s.dependency 'CryptoSwift', '~> 0.7.1'
 end
