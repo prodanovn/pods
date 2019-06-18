@@ -25,10 +25,10 @@ s.homepage         = 'https://bitbucket.upnetix.com/projects/IL/repos/upnetix-lo
 # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
 s.license          = { :type => 'MIT', :file => 'LICENSE' }
 s.author           = { 'denislava.shentova@imperiaonline.org' => 'denislava.shentova@gmail.com' }
+s.ios.vendored_frameworks = 'UpnetixLocalizer.framework'
 s.source           = { :git => 'https://github.com/prodanovn/UpnetixLocalizer.git', :tag => '2.1.1-beta' }
 
 s.ios.deployment_target = '8.0'
-s.source_files = 'UpnetixLocalizer/Classes/Localizer.swift'
 
 s.dependency 'CryptoSwift', '~> 0.7.1'
 end
