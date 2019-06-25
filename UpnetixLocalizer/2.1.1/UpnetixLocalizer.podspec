@@ -13,11 +13,12 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.3'
   s.ios.vendored_frameworks = 'UpnetixLocalizer.framework', 'CryptoSwift.framework'
   s.source            = { :http => 'https://github.com/prodanovn/UpnetixLocalizer/raw/2.1.1/UpnetixLocalizer.zip' }
-  s.source_files = '/*'
+  # s.source_files = '/*'
   s.script_phases = [
   { :name => 'Download localizations',
-    :script => 'chmod +x ${PODS_TARGET_SRCROOT}/localizer_download.sh
-${PODS_TARGET_SRCROOT}/localizer_download.sh  APP_ID="TestFlex" SALT="b5befb61-c192-41fe-9d67-d9992fb3043e" DOMAINS="Common" BASE_URL="http://localizer.upnetix.cloud/api/localizations/v1.1"',
+#     :script => 'chmod +x ${PODS_TARGET_SRCROOT}/localizer_download.sh
+# ${PODS_TARGET_SRCROOT}/localizer_download.sh  APP_ID="TestFlex" SALT="b5befb61-c192-41fe-9d67-d9992fb3043e" DOMAINS="Common" BASE_URL="http://localizer.upnetix.cloud/api/localizations/v1.1"',
+:script => 'echo "Hello world"',
     :execution_position => :before_compile
   }]
 
