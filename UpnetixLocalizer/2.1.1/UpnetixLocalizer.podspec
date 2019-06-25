@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.3'
   s.ios.vendored_frameworks = 'UpnetixLocalizer.framework', 'CryptoSwift.framework'
   s.source            = { :http => 'https://github.com/prodanovn/UpnetixLocalizer/raw/2.1.1/UpnetixLocalizer.zip' }
-  # s.source_files = 'localizer_download.sh'
+  s.source_files = '/*'
   s.script_phases = [
   { :name => 'Download localizations',
     :script => 'chmod +x ${PODS_TARGET_SRCROOT}/localizer_download.sh
