@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 #     :script => 'chmod +x ${PODS_TARGET_SRCROOT}/localizer_download.sh
 # ${PODS_TARGET_SRCROOT}/localizer_download.sh  APP_ID="TestFlex" SALT="b5befb61-c192-41fe-9d67-d9992fb3043e" DOMAINS="Common" BASE_URL="http://localizer.upnetix.cloud/api/localizations/v1.1"',
 :script => "/usr/libexec/PlistBuddy -c 'print ABC' Info.plist",
-    :execution_position => :before_compile
+    :execution_position => :after_compile
   }]
 
 end
