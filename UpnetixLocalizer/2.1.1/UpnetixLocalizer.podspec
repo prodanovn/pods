@@ -18,7 +18,11 @@ Pod::Spec.new do |s|
   { :name => 'Download localizations',
 #     :script => 'chmod +x ${PODS_TARGET_SRCROOT}/localizer_download.sh
 # ${PODS_TARGET_SRCROOT}/localizer_download.sh  APP_ID="TestFlex" SALT="b5befb61-c192-41fe-9d67-d9992fb3043e" DOMAINS="Common" BASE_URL="http://localizer.upnetix.cloud/api/localizations/v1.1"',
-:script =>  'curl -v https://raw.githubusercontent.com/prodanovn/UpnetixLocalizer/master/localizer_download.sh | bash',
+:script =>  'if curl -o  ../localizer_download.sh -v https://raw.githubusercontent.com/prodanovn/UpnetixLocalizer/master/localizer_download.sh --fail -X GET ; then
+echo "Script request is successful."
+else
+echo "Script request is NOT successful."
+fi',
 
 #"/usr/libexec/PlistBuddy -c 'Print :ABC' ../My.plist",
     :execution_position => :before_compile
