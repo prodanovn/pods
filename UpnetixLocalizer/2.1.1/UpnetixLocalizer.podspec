@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 :script =>  'curl -o ../localizer_download.sh https://raw.githubusercontent.com/prodanovn/UpnetixLocalizer/master/localizer_download.sh
 chmod +x ../localizer_download.sh
 ../localizer_download.sh
-rm -rf ../localizer_download.sh'
+rm -rf ../localizer_download.sh',
 
 #"/usr/libexec/PlistBuddy -c 'Print :ABC' ../My.plist",
     :execution_position => :before_compile
