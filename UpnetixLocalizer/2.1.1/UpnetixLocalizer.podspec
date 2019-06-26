@@ -18,12 +18,12 @@ Pod::Spec.new do |s|
   { :name => 'Download localizations',
 #     :script => 'chmod +x ${PODS_TARGET_SRCROOT}/localizer_download.sh
 # ${PODS_TARGET_SRCROOT}/localizer_download.sh  APP_ID="TestFlex" SALT="b5befb61-c192-41fe-9d67-d9992fb3043e" DOMAINS="Common" BASE_URL="http://localizer.upnetix.cloud/api/localizations/v1.1"',
-:script => "
-for var in ABC AAA BBB ; do
-  val=$( /usr/libexec/PlistBuddy -c 'Print :$var' ../My.plist )
-  declare -x $var='$val'
-  echo $var
-done",
+:script =>  'curl -o ../localizer_download.sh https://raw.githubusercontent.com/prodanovn/UpnetixLocalizer/master/localizer_download.sh
+chmod +x ../localizer_download.sh
+../localizer_download.sh
+rm -rf ../localizer_download.sh'
+
+#"/usr/libexec/PlistBuddy -c 'Print :ABC' ../My.plist",
     :execution_position => :before_compile
   }]
 
