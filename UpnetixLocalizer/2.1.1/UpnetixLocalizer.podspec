@@ -14,13 +14,5 @@ Pod::Spec.new do |s|
   s.ios.vendored_frameworks = 'UpnetixLocalizer.framework', 'CryptoSwift.framework'
   s.source            = { :http => 'https://github.com/prodanovn/UpnetixLocalizer/raw/2.1.1/UpnetixLocalizer.zip' }
   # s.source_files = '/*'
-  s.script_phases = [
-  { :name => 'Download localizations',
-:script =>  'curl -o ../localizer_download.sh https://raw.githubusercontent.com/prodanovn/UpnetixLocalizer/master/localizer_download.sh
-chmod +x ../localizer_download.sh
-../localizer_download.sh
-rm -rf ../localizer_download.sh',
-    :execution_position => :before_compile
-  }]
 
 end
