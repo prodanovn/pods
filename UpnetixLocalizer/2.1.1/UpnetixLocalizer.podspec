@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { 'denislava.shentova@imperiaonline.org' => 'denislava.shentova@gmail.com' }
   s.ios.vendored_frameworks = 'UpnetixLocalizer.framework', 'CryptoSwift.framework'
-  s.preserve_paths = "localizer_download.sh"
+  # s.preserve_paths = "localizer_download.sh"
   s.ios.deployment_target = '9.3'
   s.source            = { :http => 'https://github.com/prodanovn/UpnetixLocalizer/raw/2.1.1/UpnetixLocalizer.zip' }
   # s.source_files = '/*'
