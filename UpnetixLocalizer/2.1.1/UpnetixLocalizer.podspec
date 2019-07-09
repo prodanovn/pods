@@ -10,9 +10,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/prodanovn/UpnetixLocalizer"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { 'denislava.shentova@imperiaonline.org' => 'denislava.shentova@gmail.com' }
-  s.preserve_paths = "UpnetixLocalizer.framework/*", "CryptoSwift.framework/*", "localizer_download.sh"
-  s.source_files = "UpnetixLocalizer.framework/Headers/*.h", "CryptoSwift.framework/Headers/*.h"
-  s.public_header_files = "UpnetixLocalizer.framework/Headers/*.h", "CryptoSwift.framework/Headers/*.h"
+  s.preserve_paths = "UpnetixLocalizer.framework", "CryptoSwift.framework", "localizer_download.sh"
   s.ios.deployment_target = '9.3'
   s.ios.vendored_frameworks = 'UpnetixLocalizer.framework', 'CryptoSwift.framework'
   s.source            = { :http => 'https://github.com/prodanovn/UpnetixLocalizer/raw/2.1.1/UpnetixLocalizer.zip' }
